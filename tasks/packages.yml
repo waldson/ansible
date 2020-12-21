@@ -1,7 +1,45 @@
 - name: Install Packages
-  apt: name={{item}}
-  with_items:
+  apt:
+    pkg:
       - build-essential
       - git
       - tmux
       - htop
+      - compton
+      - vifm
+      - fd-find
+      - ripgrep
+      - gpg
+      - arc-theme
+      - rofi
+      - feh
+      - zathura
+      - curl
+      - arandr
+      - qalculate
+      - gpick
+      - libreoffice-style-sifr
+      - texlive-full
+      - latexmk
+      - maim
+      - xdotool
+      - inkscape
+      - gimp
+      - net-tools
+      - syncthing
+      - gnome-font-viewer
+      - calcurse
+      - lxappearance
+      - lxqt-config
+      - neofetch
+      - wmctrl
+      - screenkey
+      - baobab
+      - unzip
+      - unrar
+      - trash-cli
+      - calibre
+      - pavucontrol
+      - nitrogen
+      - visidata
+    state: present
