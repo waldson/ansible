@@ -1,0 +1,7 @@
+- name: Install Packages
+  apt: name={{item}}
+  with_items:
+      - build-essential
+      - git
+      - tmux
+      - htop
